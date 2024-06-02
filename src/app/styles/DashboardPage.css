@@ -1,0 +1,131 @@
+.section_dashboard{
+    margin: 50px 20px;
+    border: 3px dashed #444;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.section_content{
+    margin-left: 20px;
+}
+
+.content_displayname{
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content_email{
+    color: #666;
+    margin: 5px 0;
+}
+
+.content_status{
+    margin-top: 10px;
+}
+
+@media (max-width: 480px) {
+    .section_dashboard{
+        flex-direction: column;
+    }
+
+    .section_content{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .content_displayname{
+        font-size: 20px;
+    }
+
+    .content_email{
+        font-size: 14px;
+    }
+}
+
+#pricingcards{
+    display: flex;
+    justify-content: center;
+}
+
+.pricing_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px dashed #444;
+    margin: 20px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.price_tag_cards{
+    display: flex;
+}
+
+.current_plan{
+    border-radius: 20px;
+    border: 3px dashed #444;
+    margin: 20px;
+    padding: 20px;
+    font-size: 14px;
+    flex: 1;
+    text-align: left;
+}
+
+.price_btn{
+    margin-top: 20px;
+    padding: 14px 36px;
+    font-size: 16px;
+}
+
+.price_desc{
+    list-style: disc;
+}
+
+.price_tag{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.price_time{
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    #pricingcards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .current_plan{
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .price_tag_cards{
+        flex: 1;
+        display: flex;
+    }
+
+    .pricing_card{
+        flex: 1;
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .price_btn{
+        margin-top: 20px;
+        padding: 8px 16px;
+        font-size: 15px;
+    }    
+}

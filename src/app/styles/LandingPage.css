@@ -1,0 +1,199 @@
+/* ======== Hero ======== */
+
+#hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 180px);
+}
+
+.hero_lead{
+    font-size: 52px;
+    font-weight: 500;
+    max-width: 700px;
+}
+
+.hero_links{
+    margin-top: 40px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skills__image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills__content{
+    flex: 1.1;
+    padding: 40px;
+}
+
+.skills__title{
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.skills__image img{
+    width: 90%;
+}
+
+.skills_content_title{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.skill_list{
+    margin: 20px 0;
+    color: #444;
+}
+
+.skill_list>span{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+.cta_page{
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_btn_grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.cta_title{
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cta_content{
+    max-width: 600px;
+    padding: 20px;
+}
+
+.cta_body{
+    text-align: center;
+    font-size: 15px;
+    color: #333;
+}
+
+
+
+@media (max-width: 680px) {
+    .skills{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .skills__image img{
+        width: 70%;
+    }
+
+    .remove_img{
+        display: none;
+    }
+}
+
+
+.priceing_cards_landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px dashed #444;
+    margin: 20px;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.price_tag_cards{
+    display: flex;
+}
+
+.current_plan.landing_plan{
+    border-radius: 20px;
+    border: 3px dashed #444;
+    margin: 20px;
+    padding: 20px;
+    font-size: 14px;
+    flex: 1;
+}
+
+.price_btn{
+    margin-top: 20px;
+    padding: 14px 36px;
+    font-size: 16px;
+}
+
+.price_desc{
+    list-style: disc;
+}
+
+.price_tag{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.price_time{
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+}
+
+@media (max-width: 900px) {
+    .priceing_cards_landing{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .current_plan{
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .price_tag_cards{
+        flex: 1;
+        display: flex;
+    }
+
+    .pricing_card{
+        flex: 1;
+        margin: 20px 10px;
+        text-align: center;
+    }
+
+    .price_btn{
+        margin-top: 20px;
+        padding: 8px 16px;
+        font-size: 15px;
+    }    
+}

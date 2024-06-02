@@ -1,0 +1,125 @@
+.contact_page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact_page__image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_page__image img{
+    width: 70%;
+}
+
+.contact_page__content{
+    flex: 0.8;
+    padding: 20px;
+}
+
+.contact_page .contacts_lead__title {
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact_page .contacts_lead__body {
+    font-size: 15px;
+    color: #444444; 
+    margin-bottom: 30px;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact_form label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.content_close{
+    display: none;
+}
+
+.contact_form textarea {
+    resize: vertical; /* Only vertically resizable */
+}
+
+.contact_form button {
+    padding: 16px 20px;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    background: #000;
+}
+
+.connect_btn{display: none;}
+
+@media only screen and (min-width: 780px) {
+    .contact_page{
+        align-items: center;
+        justify-content: center;
+    }
+    .contact_form{
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ffffffcd;
+        transition: 0.35s ease-in-out;
+    }
+
+    .connect_btn{display: flex;}
+
+    .form_content{
+        max-width: 600px;
+        max-height: 60vh;
+        padding: 25px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 20px;
+        border: 2px solid #000;
+        overflow-y: scroll;
+    }
+    
+    .content_close{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content_close__lead{
+        font-weight: 600;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .contact_page__image{
+        display: none;
+    }   
+}
