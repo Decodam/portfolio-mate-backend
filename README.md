@@ -6,7 +6,8 @@ Welcome to Portfolio Mate, your go-to solution for building professional portfol
 
 ## Demo
 
-Check out the live demo [here](https://portfolio-mate.netlify.app/).
+Check out the builder app here [here](https://portfolio-mate.netlify.app/).
+Check out a demo portfolio [here](https://portfolio-mate-profile.netlify.app/user/bcJ4zOV4UTVGSHnCG0e3RWz7lHq2)
 
 ## Features
 
